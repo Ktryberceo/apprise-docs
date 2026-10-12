@@ -3,14 +3,14 @@ title: Apprise Mobile Terms of Service
 description: Terms governing the use of Apprise Mobile.
 sidebar:
   label: Terms of Service
-  order: 3
+  order: 4
 ---
 
-**Last updated: August 29, 2026**
+**Last updated: October 10, 2026**
 
 These Terms apply to Apprise Mobile, published as **Apprise** on Google Play
-("the app"). By using the app, you agree to these Terms. If you do not agree,
-please do not use it.
+and the App Store ("the app"). By using the app, you agree to these Terms. If
+you do not agree, please do not use it.
 
 ## 1. What the App Does
 
@@ -42,15 +42,20 @@ notification services. Their availability, security, data handling, and
 delivery results are outside the app's control and may be governed by separate
 terms and privacy policies.
 
-## 4. Premium Purchase
+## 4. Full Version Purchase
 
-Premium is an optional, one-time Google Play purchase that unlocks support for
-multiple servers and configurations. Google Play processes the transaction and
-associates the purchase with your Google Play account so eligible access can be
-restored.
+Full Version is an optional, one-time purchase that unlocks support for
+multiple servers and configurations. It is bought through the store the app
+came from, which processes the transaction and associates the purchase with
+your account there so eligible access can be restored:
 
-Purchase and refund requests are handled under Google Play policies and
-applicable law. Google or the developer may process a refund when permitted.
+- **Google Play:** the purchase is tied to your Google Play account. Purchase
+  and refund requests are handled under Google Play policies and applicable
+  law. Google or the developer may process a refund when permitted.
+- **App Store:** Apple processes the purchase and ties it to your Apple
+  Account. Purchase and refund requests are handled by Apple under App Store
+  policies and applicable law. Refunds for App Store purchases are requested
+  from Apple at [reportaproblem.apple.com](https://reportaproblem.apple.com).
 
 ## 5. No Warranty
 
@@ -77,4 +82,4 @@ continuing.
 
 ## 8. Contact
 
-Questions about these Terms can be sent to [lead2gold@gmail.com](mailto:lead2gold@gmail.com).
+Questions about these Terms can be sent to **[lead2gold@gmail.com](mailto:lead2gold@gmail.com)**.

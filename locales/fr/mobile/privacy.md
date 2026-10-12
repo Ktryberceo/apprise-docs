@@ -3,13 +3,13 @@ title: Politique de Confidentialité d'Apprise Mobile
 description: Comment Apprise Mobile traite les informations sur votre appareil et avec les serveurs que vous configurez.
 sidebar:
   label: Politique de Confidentialité
-  order: 2
+  order: 3
 ---
 
-**Dernière mise à jour : 29 août 2026**
+**Dernière mise à jour : 10 octobre 2026**
 
 La présente politique de confidentialité s'applique à Apprise Mobile, publiée
-sous le nom **Apprise** sur Google Play (« l'application »).
+sous le nom **Apprise** sur Google Play et l'App Store (« l'application »).
 
 ## Aperçu
 
@@ -33,8 +33,8 @@ L'application peut stocker :
 - des copies temporaires des fichiers sélectionnés ou des photos prises comme
   pièces jointes.
 
-Les identifiants de connexion sont protégés avec Android Keystore. Les autres
-données restent sur votre appareil, sauf si vous choisissez de les envoyer, de
+Les identifiants de connexion sont protégés avec Android Keystore sur Android
+et avec le trousseau iOS sur iOS. Les autres données restent sur votre appareil, sauf si vous choisissez de les envoyer, de
 les exporter ou de les sauvegarder.
 
 Les identifiants de connexion et de configuration ainsi que les URL de
@@ -87,11 +87,20 @@ suivi.
 
 ## Services Google Play
 
-Google Play Billing traite l'achat facultatif de la version Premium. Google
-gère les informations de paiement ; l'application reçoit uniquement les
-informations d'achat nécessaires pour fournir et restaurer l'accès Premium.
+Sur Android, Google Play Billing traite l'achat facultatif de la version
+complète. Google gère les informations de paiement ; l'application reçoit
+uniquement les informations d'achat nécessaires pour fournir et restaurer
+l'accès à la version complète.
 Votre utilisation de Google Play est régie par les
 [pratiques de Google en matière de confidentialité et de sécurité](https://play.google.com/about/privacy-and-security.html).
+
+## App Store d'Apple
+
+Sur iOS, l'App Store traite l'achat facultatif de la version complète. Apple
+gère les informations de paiement ; l'application reçoit uniquement les
+informations d'achat nécessaires pour fournir et restaurer l'accès à la version
+complète. Votre utilisation de l'App Store est régie par la
+[politique de confidentialité d'Apple](https://www.apple.com/fr/legal/privacy/).
 
 ## Sauvegardes et Exports de Diagnostic
 

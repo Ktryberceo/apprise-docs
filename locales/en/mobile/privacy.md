@@ -3,13 +3,13 @@ title: Apprise Mobile Privacy Policy
 description: How Apprise Mobile handles information on your device and with servers you configure.
 sidebar:
   label: Privacy Policy
-  order: 2
+  order: 3
 ---
 
-**Last updated: August 29, 2026**
+**Last updated: October 10, 2026**
 
 This Privacy Policy applies to Apprise Mobile, published as **Apprise** on
-Google Play ("the app").
+Google Play and the App Store ("the app").
 
 ## Overview
 
@@ -28,8 +28,9 @@ The app may store:
 - App preferences, diagnostic logs, and records of accepted legal documents.
 - Temporary copies of files you select or photos you take for an attachment.
 
-Credentials are protected with the Android Keystore. Other app data remains on
-your device unless you choose to send, export, or back it up.
+Credentials are protected with the Android Keystore on Android and the iOS
+Keychain on iOS. Other app data remains on your device unless you choose to
+send, export, or back it up.
 
 Credentials, configuration IDs, and notification URLs may authorize your
 server to send through connected accounts. Protect your device and backups,
@@ -71,10 +72,18 @@ sell, rent, or use your information for advertising or tracking.
 
 ## Google Play Services
 
-Google Play Billing processes an optional premium purchase. Google handles
-payment details; the app receives only the purchase information needed to
-provide and restore premium access. Your use of Google Play is governed by
-[Google's privacy and security practices](https://play.google.com/about/privacy-and-security.html).
+On Android, Google Play Billing processes an optional full version purchase.
+Google handles payment details; the app receives only the purchase information
+needed to provide and restore full version access. Your use of Google Play is
+governed by [Google's privacy and security
+practices](https://play.google.com/about/privacy-and-security.html).
+
+## Apple App Store
+
+On iOS, the App Store processes an optional full version purchase. Apple
+handles payment details; the app receives only the purchase information needed
+to provide and restore full version access. Your use of the App Store is
+governed by [Apple's privacy policy](https://www.apple.com/legal/privacy/).
 
 ## Backups and Diagnostic Exports
 

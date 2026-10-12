@@ -3,14 +3,15 @@ title: Conditions d'Utilisation d'Apprise Mobile
 description: Conditions régissant l'utilisation d'Apprise Mobile.
 sidebar:
   label: Conditions d'Utilisation
-  order: 3
+  order: 4
 ---
 
-**Dernière mise à jour : 29 août 2026**
+**Dernière mise à jour : 10 octobre 2026**
 
 Les présentes Conditions s'appliquent à Apprise Mobile, publiée sous le nom
-**Apprise** sur Google Play (« l'application »). En utilisant l'application, vous
-acceptez ces Conditions. Si vous ne les acceptez pas, veuillez ne pas l'utiliser.
+**Apprise** sur Google Play et l'App Store (« l'application »). En utilisant
+l'application, vous acceptez ces Conditions. Si vous ne les acceptez pas,
+veuillez ne pas l'utiliser.
 
 ## 1. Fonctionnement de l'Application
 
@@ -51,16 +52,22 @@ leur traitement des données et leurs résultats de livraison échappent au cont
 de l'application et peuvent être régis par des conditions et politiques de
 confidentialité distinctes.
 
-## 4. Achat Premium
+## 4. Achat de la Version Complète
 
-Premium est un achat facultatif et unique sur Google Play qui permet de gérer
-plusieurs serveurs et configurations. Google Play traite la transaction et
-associe l'achat à votre compte Google Play afin que l'accès admissible puisse
-être restauré.
+La version complète est un achat facultatif et unique qui permet de gérer
+plusieurs serveurs et configurations. Elle s'achète dans la boutique d'où
+provient l'application, qui traite la transaction et associe l'achat à votre
+compte afin que l'accès admissible puisse être restauré :
 
-Les demandes relatives aux achats et aux remboursements sont traitées selon
-les politiques de Google Play et les lois applicables. Google ou le développeur
-peut effectuer un remboursement lorsque cela est permis.
+- **Google Play :** l'achat est associé à votre compte Google Play. Les
+  demandes relatives aux achats et aux remboursements sont traitées selon les
+  politiques de Google Play et les lois applicables. Google ou le développeur
+  peut effectuer un remboursement lorsque cela est permis.
+- **App Store :** Apple traite l'achat et l'associe à votre compte Apple. Les
+  demandes relatives aux achats et aux remboursements sont traitées par Apple
+  selon les politiques de l'App Store et les lois applicables. Les
+  remboursements se demandent auprès d'Apple à l'adresse
+  [reportaproblem.apple.com](https://reportaproblem.apple.com).
 
 ## 5. Absence de Garantie
 
