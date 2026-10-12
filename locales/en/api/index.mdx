@@ -6,6 +6,8 @@ sidebar:
   order: 1
 ---
 
+import { Icon } from "@astrojs/starlight/components";
+
 <style>{`
     :root[data-theme="dark"] .apprise-flow img {
     content: url("/assets/apprise-overview-en-dark.svg");
@@ -33,10 +35,13 @@ sidebar:
     );
   }
 
-  .api-mobile-callout img {
+  .api-mobile-callout__icon {
     width: 58px;
     height: 58px;
     flex: 0 0 58px;
+    display: grid;
+    place-items: center;
+    color: var(--sl-color-text-accent);
   }
 
   .api-mobile-callout__copy {
@@ -109,23 +114,20 @@ It is the middle box in the picture below: everything on the left hands it a mes
 - **Runs anywhere.** A small container that is at home under Docker, Docker Compose, or Kubernetes.
 
 <div class="api-mobile-callout">
-  <img src="/assets/google-play.svg" alt="" width="58" height="58" />
+  <span class="api-mobile-callout__icon" aria-hidden="true">
+    <Icon name="mobile-android" />
+  </span>
   <div class="api-mobile-callout__copy">
     <strong>Add your phone to the picture</strong>
     <p>
-      Apprise Mobile is the official Android companion for a server you already
-      run. Scan a QR code from the web interface to connect, then send
+      Apprise Mobile is the official Android and iOS companion for a server you
+      already run. Scan a QR code from the web interface to connect, then send
       notifications, share a photo, and check what was delivered, all from your
       phone.
     </p>
   </div>
-  <a
-    class="api-mobile-cta"
-    href="https://play.google.com/store/apps/details?id=com.appriseit.mobile"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Get It on Google Play
+  <a class="api-mobile-cta" href="/mobile/">
+    Get Apprise Mobile
   </a>
 </div>
 

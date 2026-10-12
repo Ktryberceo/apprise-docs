@@ -6,6 +6,8 @@ sidebar:
   order: 1
 ---
 
+import { Icon } from "@astrojs/starlight/components";
+
 <style>{`
     :root[data-theme="dark"] .apprise-flow img {
     content: url("/assets/apprise-overview-fr-dark.svg");
@@ -33,10 +35,13 @@ sidebar:
     );
   }
 
-  .api-mobile-callout img {
+  .api-mobile-callout__icon {
     width: 58px;
     height: 58px;
     flex: 0 0 58px;
+    display: grid;
+    place-items: center;
+    color: var(--sl-color-text-accent);
   }
 
   .api-mobile-callout__copy {
@@ -109,30 +114,27 @@ C'est la boîte centrale du schéma ci-dessous : tout ce qui se trouve à gauc
 - **S'exécute partout.** Un petit conteneur à l'aise sous Docker, Docker Compose ou Kubernetes.
 
 <div class="api-mobile-callout">
-  <img src="/assets/google-play.svg" alt="" width="58" height="58" />
+  <span class="api-mobile-callout__icon" aria-hidden="true">
+    <Icon name="mobile-android" />
+  </span>
   <div class="api-mobile-callout__copy">
     <strong>Ajoutez votre téléphone au tableau</strong>
     <p>
-      Apprise Mobile est le compagnon Android officiel du serveur que vous
-      hébergez déjà. Scannez un code QR depuis l'interface web pour vous
+      Apprise Mobile est le compagnon Android et iOS officiel du serveur que
+      vous hébergez déjà. Scannez un code QR depuis l'interface web pour vous
       connecter, puis envoyez des notifications, partagez une photo et consultez
       ce qui a été remis, depuis votre téléphone.
     </p>
   </div>
-  <a
-    class="api-mobile-cta"
-    href="https://play.google.com/store/apps/details?id=com.appriseit.mobile"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Disponible sur Google Play
+  <a class="api-mobile-cta" href="/fr/mobile/">
+    Obtenir Apprise Mobile
   </a>
 </div>
 
 ## Prise en Main
 
-1. **Déployez-la.** Lancez le conteneur avec [Docker ou Kubernetes](../deployment/).
+1. **Déployez-la.** Lancez le conteneur avec [Docker ou Kubernetes](./deployment/).
 2. **Ajoutez vos destinations.** Enregistrez vos URL de notification depuis l'interface web et donnez-leur une clé.
 3. **Envoyez.** Dirigez vers votre serveur tout ce qui parle HTTP, et le message part.
 
-[Déployer le serveur](../deployment/) · [Voir ce qu'elle sait faire](../usage/) · [Parcourir les endpoints](../endpoints/)
+[Déployer le serveur](./deployment/) · [Voir ce qu'elle sait faire](./usage/) · [Parcourir les endpoints](./endpoints/)
