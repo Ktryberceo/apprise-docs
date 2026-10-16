@@ -6,7 +6,7 @@ sidebar:
   order: 1
 ---
 
-import { Icon, LinkButton } from "@astrojs/starlight/components";
+import { Icon } from "@astrojs/starlight/components";
 
 <style>{`
     :root[data-theme="dark"] .apprise-flow img {
@@ -21,8 +21,8 @@ import { Icon, LinkButton } from "@astrojs/starlight/components";
   .api-mobile-callout {
     position: relative;
     isolation: isolate;
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: clamp(1rem, 2.5vw, 1.5rem);
     overflow: hidden;
@@ -38,32 +38,34 @@ import { Icon, LinkButton } from "@astrojs/starlight/components";
     );
   }
 
+  .api-mobile-callout__copy {
+    flex: 1 1 36rem;
+    min-width: 0;
+    max-width: 42rem;
+  }
+
+  .api-mobile-callout__heading {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
   .api-mobile-callout__icon {
-    width: 4.25rem;
-    height: 4.25rem;
     display: grid;
+    flex: 0 0 2.25rem;
+    width: 2.25rem;
+    height: 2.25rem;
     place-items: center;
-    border: 1px solid
-      color-mix(in srgb, var(--sl-color-accent) 45%, transparent);
-    border-radius: 1rem;
-    background: linear-gradient(
-      145deg,
-      color-mix(in srgb, var(--sl-color-accent) 18%, var(--sl-color-bg) 82%),
-      color-mix(in srgb, var(--sl-color-accent) 7%, var(--sl-color-bg) 93%)
-    );
-    box-shadow: 0 0.5rem 1.4rem
-      color-mix(in srgb, var(--sl-color-accent) 12%, transparent);
     color: var(--sl-color-text-accent);
   }
 
   .api-mobile-callout__icon svg {
-    width: 2.25rem;
-    height: 2.25rem;
+    width: 1.9rem;
+    height: 1.9rem;
   }
 
-  .api-mobile-callout__copy {
+  .api-mobile-callout__title {
     min-width: 0;
-    max-width: 42rem;
   }
 
   .api-mobile-callout__eyebrow {
@@ -85,15 +87,15 @@ import { Icon, LinkButton } from "@astrojs/starlight/components";
   }
 
   .api-mobile-callout__copy p {
-    margin: 0;
+    margin: 0.8rem 0 0;
     color: var(--sl-color-gray-2);
     font-size: 0.95rem;
   }
 
   .api-mobile-callout__action {
-    display: grid;
-    justify-items: center;
-    gap: 0.9rem;
+    display: flex;
+    flex: 1 0 12.5rem;
+    justify-content: center;
   }
 
   .api-mobile-callout a.api-mobile-cta {
@@ -125,49 +127,22 @@ import { Icon, LinkButton } from "@astrojs/starlight/components";
     transform: translateY(-1px);
   }
 
-  @media (max-width: 42rem) {
-    .api-mobile-callout {
-      grid-template-columns: minmax(0, 1fr);
-    }
-
-    .api-mobile-callout__action {
-      width: 100%;
-      justify-items: center;
-    }
-
-    .api-mobile-callout__icon {
-      display: none;
-    }
-  }
-
   @media (max-width: 30rem) {
+    .api-mobile-callout__action {
+      flex-basis: 100%;
+    }
+
     .api-mobile-callout a.api-mobile-cta {
       width: 100%;
     }
   }
 
-  .api-get-started-actions {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 0.75rem 1.25rem;
-    margin-top: 1.25rem;
+  @media (max-width: 22rem) {
+    .api-mobile-callout__icon {
+      display: none;
+    }
   }
 
-  .api-get-started-secondary {
-    display: inline-flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 0.45rem 0.8rem;
-    font-size: 0.95rem;
-  }
-
-  .api-get-started-secondary a + a::before {
-    content: "·";
-    margin-right: 0.8rem;
-    color: var(--sl-color-gray-3);
-    text-decoration: none;
-  }
 `}</style>
 
 The **Apprise API** turns Apprise into a service. You run it once, point your systems at it, and they can all send notifications with simple HTTP(S) requests without installing Python, without the CLI, and without knowing anything about the services behind it.
@@ -197,8 +172,15 @@ It is the middle box in the picture below: everything on the left hands it a mes
 
 <div class="api-mobile-callout">
   <div class="api-mobile-callout__copy">
-    <span class="api-mobile-callout__eyebrow">Android / iOS App</span>
-    <strong>Add Your Phone to the Picture</strong>
+    <div class="api-mobile-callout__heading">
+      <span class="api-mobile-callout__icon" aria-hidden="true">
+        <Icon name="mobile-android" />
+      </span>
+      <div class="api-mobile-callout__title">
+        <span class="api-mobile-callout__eyebrow">Android / iOS App</span>
+        <strong>Add Your Phone to the Picture</strong>
+      </div>
+    </div>
     <p>
       Apprise Mobile is the official Android and iOS companion for a server you
       already run. Scan a QR code from the web interface to connect, then send
@@ -207,27 +189,14 @@ It is the middle box in the picture below: everything on the left hands it a mes
     </p>
   </div>
   <div class="api-mobile-callout__action">
-    <span class="api-mobile-callout__icon" aria-hidden="true">
-      <Icon name="mobile-android" />
-    </span>
     <a class="api-mobile-cta" href="/mobile/">
       Get Apprise Mobile
     </a>
   </div>
 </div>
 
-## Getting Started
+## Next Steps
 
-1. **Deploy it.** Start the Apprise API container with Docker or Kubernetes.
-2. **Add your destinations.** Use the web interface to save your notification URLs and give them a key.
-3. **Send.** Point anything that speaks HTTP at your server and the message goes out.
-
-<div class="api-get-started-actions">
-  <LinkButton href="/api/deployment/" variant="primary" icon="right-arrow">
-    Deploy Apprise API
-  </LinkButton>
-  <span class="api-get-started-secondary">
-    <a href="/api/usage/">API usage</a>
-    <a href="/api/endpoints/">Endpoint reference</a>
-  </span>
-</div>
+- **[Run the Server](/api/deployment/):** Choose Docker, Docker Compose, or Kubernetes and bring up your Apprise API instance.
+- **[Address Destinations](/api/usage/):** Use a saved configuration key, provide notification URLs with each request, or combine the two approaches.
+- **[Send Your First Notification](/api/endpoints/):** Pick the endpoint that fits your application and make a standard HTTP request.
